@@ -1,0 +1,31 @@
+{% extends 'main_website/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="form-panel">
+        <h2>Get Your Attendance Report Here.</h2>
+        <hr />
+        <form action="#" method="POST" class="form">
+            <div class="form-container">
+                <input type="text" class="form-input" placeholder="Enter Your ID here :">
+                <div style="text-align: right;"><button class="btn btn-detail">Get Details</button>
+                    <button class="btn btn-reset">Refresh</button>
+                </div>
+            </div>
+            <div class="post-panel">
+                <div style="display: flex; justify-content: space-between;">
+                    <p>Name : Rahul Kumar</p>
+                    <p>ID : 562</p>
+                    <p>Today Attendance : Present</p>
+                </div>
+                <ul class="flex-bars">
+                    <li data-value="P" data-label="03/11/2020"></li>
+                    <li data-value="P" data-label="03/11/2020"></li>
+                    <li data-value="A" data-label="03/11/2020"></li>
+                    <li data-value="P" data-label="03/11/2020"></li>
+                </ul>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}

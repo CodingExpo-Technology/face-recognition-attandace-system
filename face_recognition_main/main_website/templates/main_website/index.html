@@ -1,0 +1,49 @@
+{% extends 'main_website/base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+
+  .nav-item:hover{
+    background-color:black;
+    transition-delay:100ms;
+  }
+
+  body{
+    background-image: url("{% static 'images/b1.jpg' %}");
+  }
+
+  .navbar{
+    background-color: rgb(71, 71, 231);
+    height: 55px;
+  }
+  
+  
+</style> 
+
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <a class="navbar-brand" style="width:50px;height:50px; text-decoration: none;" href="{% url 'home' %}"><img style="width:50px;height:50px; text-decoration: none;" src="{% static 'images/icon.jpg' %}"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Live <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link active" href="{% url 'user' %}">User</a>
+          <a class="nav-item nav-link active" href="#">Login</a>
+        </div>
+      </div>
+    </nav>
+
+
+    <h1 class="text-center" style="margin-top:20px;font-size: 100;font-weight:bold">Face  Recognition  Attendance  System</h1>
+    <p class="text-center" style="margin-top:20px;font-size: 20px;" >
+    Loem is the capital of Togo, in   West Africa.it's Known for it's palm-lined<br>
+    Atlantic coastline. The central Independence Mounten is in<br>
+    a landscaped traffic circle.The nearby Cogressional Place houses<br>the National Museum,exhibiting West African jewelry,masks,musical<br>
+    instrumenys and prttery.To the northeast,the Akodessewa<br>
+    Fetist Market sells voodoo items like animal skins and skulls.</p>
+
+
+    
+{% endblock %}
